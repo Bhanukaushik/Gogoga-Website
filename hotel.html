@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogaga - Find Your Dream Hotel!</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header>
+        <h1>Gogaga</h1>
+        <p>Escape the ordinary and discover extraordinary stays.</p>
+    </header>
+    <main>
+        <div class="hero-section">
+            <img src="images/bg_1.jpg" height="400" width="300" alt="Hotel scene with pool and beach view">
+            <div class="search-container">
+                <h2>Book Your Dream Getaway</h2>
+                <form id="hotel-search-form">
+                    <div class="form-group">
+                        <select id="destination">
+                            <option value="">Select Destination</option>
+                            <option value="rome">Rome ,Italy</option>
+                            <option value="india">Agra, India</option>
+                            <option value="dubai">Dubai</option>
+                            <option value="maldives">Maldives</option>
+                            <option value="thailand">Thailand</option>
+                        </select>
+                        <img src="images/location-icon.svg" alt="Location">
+                    </div>
+                    <div class="form-group date-pickers">
+                        <label for="check-in">Check-In:</label>
+                        <input type="date" id="check-in" name="check-in" min="<?php echo date('Y-m-d'); ?>" required>
+                        <label for="check-out">Check-Out:</label>
+                        <input type="date" id="check-out" name="check-out" min="<?php echo date('Y-m-d'); ?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests:</label>
+                        <select id="guests">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                        <img src="images/guests-icon.svg" alt="Guests">
+                    </div>
+                    <button type="submit">Find Hotels</button>
+                </form>
+            </div>
+        </div>
+        <div class="highlights">
+            <h2>Explore Our Popular Destinations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/destination-1.jpg" alt="Cityscape image">
+                    <h3>Rome, Italy</h3>
+                    <p>The City of Lights awaits.</p>
+                </div>
+                <div class="card">
+                    <img src="images/destination-5.jpg" alt="Beach scene image">
+                    <h3>Thailand</h3>
+                    <p>Paradise found in Southeast Asia.</p>
+                </div>
+                <div class="card">
+                    <img src="images/destination-3.jpg" alt="Cityscape image">
+                    <h3>Dubai</h3>
+                    <p>The energy that never sleeps.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024  Gogaga. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

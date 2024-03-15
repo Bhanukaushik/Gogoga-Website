@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/backgroung.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(62, 194, 221, 0.441); /* Transparent black for background image visibility */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures viewport height */
+}
+
+.search-container {
+    background-color: #fff; /* Light background for better readability */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%; /* Adjust width for wider screens */
+    max-width: 500px; /* Limit maximum width on larger screens */
+    margin: 0 auto; /* Center the search container horizontally */
+}
+
+.search-container h2 {
+    margin-bottom: 15px;
+    color: #333; /* Darker text for contrast */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 100px;
+    margin-right: 10px;
+    color: #333; /* Darker text for contrast */
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group img {
+    width: 20px;
+    height: 20px;
+}
+
+.passenger-count {
+    margin-bottom: 15px;
+}
+
+.passenger-count label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Darker text for contrast */
+}
+
+button[type="submit"] {
+    background-color: #388e3c; /* Green button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.disclaimer {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #999;
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .search-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .search-container {
+        width: 100%; /* Full width on very small screens */
+    }
+    .form-group label {
+        width: 80px; /* Reduce label width for better mobile layout */
+    }
+}

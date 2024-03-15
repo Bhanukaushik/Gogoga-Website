@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogaga - Book Flights & Explore the World!</title>
+    <link rel="stylesheet" href="flight.css">
+</head>
+<body>
+    <header>
+        <h1>Gogaga</h1>
+        <p>Explore new horizons with affordable flights.</p>
+    </header>
+    <main>
+        <div class="search-container">
+            <h2>Find Your Dream Escape</h2>
+            <form id="flight-search-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="text" id="from" name="from" placeholder="Enter origin city or airport" required>
+                    <img src="images/from.svg" alt="Origin City/Airport">
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" name="to" placeholder="Enter destination city or airport" required>
+                    <img src="images/to.svg" alt="Destination City/Airport">
+                </div>
+                <div class="form-group">
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" name="departure-date" min="<?php echo date('Y-m-d'); ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="return-date">Return Date (optional):</label>
+                    <input type="date" id="return-date" name="return-date" min="<?php echo date('Y-m-d'); ?>">
+                </div>
+                <div class="passenger-count">
+                    <label for="passengers">Passengers:</label>
+                    <select id="passengers" name="passengers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <button type="submit">Find Flights</button>
+            </form>
+            <p class="disclaimer">**Note:** This is a basic mockup. Flight search functionality will be implemented in a future version.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gogaga. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
